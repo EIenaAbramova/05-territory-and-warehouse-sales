@@ -6,7 +6,7 @@
 -- 1. Case-insensitive search, including databases with case-sensitive collation.
 SELECT p.name AS product_name, p.shelf_life
 FROM dbo.product AS p
-WHERE p.name COLLATE Cyrillic_General_100_CI_AS LIKE N'%самокат%'
+WHERE p.name COLLATE Cyrillic_General_100_CI_AS LIKE N'%05%'
   AND p.shelf_life <= 7;
 GO
 
